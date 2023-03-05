@@ -1,0 +1,132 @@
+:root {
+    --body-color: rgb(39, 41, 44);
+    --box-color: hsl(244, 12%, 23%);
+}
+
+.nav-custom {
+    border-bottom: solid 2px #fff;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.footer-custom {
+    border-top: solid 2px #fff;
+}
+
+.bg-main {
+    background-color: var(--body-color);
+}
+
+.text-mix {
+    background: linear-gradient(to left, #E3D88C 25%, #866413 100%);
+    background-clip: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  outline: none;
+}
+
+a:hover {
+  color: #000000;
+}
+
+/*----- Buttons -----*/
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background: linear-gradient(to left, #E3D88C 25%, #866413 100%);
+    color: black;
+    padding: .75rem 1.4rem;
+    border-radius: .25rem;
+    font-weight: var(--font-medium);
+    position: relative;
+    z-index: 1;
+}
+
+.button-white {
+    color: white !important;
+}
+
+.button::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: .25rem;
+}
+
+.button:hover::after {
+    transform: scale(1);
+}
+
+.button__icon {
+    font-size: 1.25rem;
+}
+
+.home {
+    background-image: url(/public/media/home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}
+
+.home-icon {
+    width: 11rem;
+    background-color: var(--box-color);
+    border-radius: .75rem;
+}
+
+/*----- about -----*/
+.about__box {
+    text-align: center;
+    border-radius: .25rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--box-color);
+}
+
+.about__img {
+    background-image: url(/public/media/home.png);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 90vh;
+    border-radius: 1.5rem;
+}
+
+.card-cs {
+    width: 20rem;
+    height: 25rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    .home {
+        width: 100%;
+    }
+
+    .about__img {
+        width: 100%;
+    }
+}

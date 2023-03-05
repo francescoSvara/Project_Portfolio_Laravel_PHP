@@ -1,0 +1,37 @@
+.input__container {
+    position: relative;
+    margin-top: .1rem;
+    margin-bottom: 1.9rem;
+}
+
+.input {
+    width: 100%;
+    border: 2px solid white;
+    background-color: transparent;
+    padding: .6rem 1.2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: .5px;
+    border-radius: .50rem;
+    transition: .3s;
+}
+
+textarea.input {
+    padding: .8rem 1.2rem;
+    min-height: 140px;
+    border-radius: .50rem;
+    resize: none;
+}
+
+.input__container span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    color: transparent;
+    transform: translateY(-50%);
+    font-size: .875rem;
+    padding: 0 .4rem;
+    pointer-events: none;
+    z-index: 10;
+}
